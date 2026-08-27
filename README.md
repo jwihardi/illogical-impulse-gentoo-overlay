@@ -1,6 +1,6 @@
 # Illogical Impulse Gentoo Overlay
 
-Gentoo overlay for [Illogical Impulse](https://github.com/end-4/dots-hyprland).
+Gentoo overlay for [Illogical Impulse](https://github.com/end-4/dots-hyprland). Use this overlay to update through Portage instead of cloning the end-4 repo each time.
 
 ## Pre-setup
 
