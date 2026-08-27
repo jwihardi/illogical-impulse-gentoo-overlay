@@ -2,6 +2,29 @@
 
 Gentoo overlay for [Illogical Impulse](https://github.com/end-4/dots-hyprland).
 
+## Pre-setup
+
+If you previously used Gentoo support from [end-4/dots-hyprland](https://github.com/end-4/dots-hyprland), remove the old `ii-dots` repo first.
+
+You don't need to uninstall the Illogical Impulse packages.
+
+Older installs may have created `ii-dots` with `eselect-repository`:
+
+```bash
+sudo eselect repository remove -f ii-dots
+```
+
+If that says the repo is not registered, skip it.
+
+Then remove any old local repo files:
+
+```bash
+sudo rm -f -- /etc/portage/repos.conf/ii-dots.conf
+sudo rm -rf -- /var/db/repos/ii-dots
+```
+
+Keep your existing `package.use` and `package.accept_keywords` files.
+
 ## Setup
 
 ```bash
