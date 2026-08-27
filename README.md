@@ -4,47 +4,27 @@ Gentoo overlay for [Illogical Impulse](https://github.com/end-4/dots-hyprland).
 
 ## Setup
 
-Install `eselect-repository` if needed:
-
 ```bash
+# Install eselect-repository
 sudo emerge --update app-eselect/eselect-repository
-```
 
-Add the overlay:
-
-```bash
+# Add the overlay
 sudo eselect repository add ii-dots git \
     https://github.com/jwihardi/illogical-impulse-gentoo-overlay.git
+
+# Sync only this overlay
+sudo emaint sync -r ii-dots
+
+# Alternatively, sync all configured repositories
+# sudo emerge --sync
 ```
 
-Sync repositories:
-
-```bash
-sudo emerge --sync
-```
-
-The overlay will be installed to:
-
-```text
-/var/db/repos/ii-dots
-```
+The overlay is installed to `/var/db/repos/ii-dots`.
 
 ## Updating
 
-Update normally with:
-
-```bash
-sudo emerge --sync
-```
-
-Or sync only this overlay:
-
-```bash
-sudo emaint sync -r ii-dots
-```
+Use `sudo emerge --sync` to sync all configured repositories, or `sudo emaint sync -r ii-dots` to update only this overlay.
 
 ## Removing
 
-```bash
-sudo eselect repository remove -f ii-dots
-```
+Remove the overlay with `sudo eselect repository remove -f ii-dots`.
