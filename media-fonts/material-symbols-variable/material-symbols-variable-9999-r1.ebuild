@@ -7,16 +7,14 @@ inherit font git-r3
 
 DESCRIPTION="Material Design icons by Google - variable fonts"
 HOMEPAGE="https://github.com/google/material-design-icons"
-
 EGIT_REPO_URI="https://github.com/google/material-design-icons.git"
+S="${WORKDIR}/fonts"
 
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS=""
 
 BDEPEND=">=dev-vcs/git-2.19[curl]"
-
-S="${WORKDIR}/fonts"
 
 FONT_SUFFIX="ttf"
 
